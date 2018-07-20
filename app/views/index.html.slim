@@ -1,0 +1,11 @@
+table
+  thead
+    tr
+      th Question
+      th Token
+
+  tbody
+    - @all_tokens.each do |t|
+      tr
+        td == t.question 
+        td == t.token

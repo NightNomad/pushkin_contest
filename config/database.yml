@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: xoxol
+  password: dhjnvytyjub
+
+development:
+  <<: *default
+  database: pushkin_poems
+
+test:
+  <<: *default
+  database: pushkin_poems
+
+production:
+  <<: *default
+  database: pushkin_poems
